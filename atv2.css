@@ -1,0 +1,55 @@
+.grid{
+    display: grid;
+    max-width: 800px;
+}
+.item {
+	margin: 5px;
+	text-align: center;
+	font-size: 1.5em;
+}
+.um{
+    grid-area: um;
+    height: 100px;
+    background-color: green;
+}
+.dois{
+    grid-area: dois;
+    background-color: gainsboro;
+    height: 100px;
+}
+.tres{
+    grid-area: tres;
+    background-color: red;
+}
+.quatro{
+    grid-area: quatro;
+    height: 250px;
+    background-color: yellow;
+}
+.cinco{
+    grid-area: cinco;
+    background-color: blue;
+    height: 100px;
+}
+.seis{
+    grid-area: seis;
+    background-color: greenyellow;
+    height: 100px;
+}
+.grid-template-areas-1{
+    grid-template-areas: 
+    "um um um "
+    "dois tres quatro"
+    "cinco cinco quatro"
+    "seis seis seis";
+}
+@media screen and (max-width: 500px){
+    .grid{
+        grid-template-areas: 
+        "um um "
+        "dois tres"
+        "cinco cinco"
+        "quatro quatro"
+        "seis seis";
+    }
+}
